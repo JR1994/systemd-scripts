@@ -1,0 +1,6 @@
+[Unit]
+Description=Check if wlan0 is working.
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c '/opt/scripts/wlan0-ping.sh >> /var/log/wlan0-ping.log'
