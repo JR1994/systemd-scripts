@@ -3,3 +3,6 @@ Description=Run wlan0-check.service ever 2 minutes
 
 [Timer]
 OnCalendar=*:0/02
+
+[Install]
+WantedBy=timers.target
